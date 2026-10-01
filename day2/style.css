@@ -1,0 +1,145 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f4f4f4;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0 0 16px;
+}
+
+/* Nav – Flexbox row, centered, 16px gap */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffd166;
+  text-decoration: underline;
+}
+
+/* Main – centered with max-width */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Section cards */
+main section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Features grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  background: #f0f0f0;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
+
+/* Form fields stacked, full width */
+form p {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 16px;
+}
+
+label {
+  margin-bottom: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons with transition */
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #555;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  header {
+    padding: 16px 12px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}

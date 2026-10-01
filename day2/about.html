@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About QuickNotes</title>
+    <!-- Shared stylesheet for both pages -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>QuickNotes</h1>
+      <p>Capture ideas before they disappear.</p>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>About QuickNotes</h2>
+      <p>
+        QuickNotes is a simple, no-fuss web application designed to help you
+        capture fleeting thoughts and ideas the moment they occur. Whether
+        you're a student, a developer, or a busy professional, QuickNotes
+        provides a distraction-free space to jot down notes instantly.
+      </p>
+
+      <section>
+        <h3>How to use QuickNotes</h3>
+        <ol>
+          <li>Type your note into the "New note" input field on the home page.</li>
+          <li>Click the "Add Note" button to save it to your list.</li>
+          <li>Your note will appear instantly in the "Your notes" section below.</li>
+        </ol>
+      </section>
+
+      <!-- Added class="features" to the features list as required -->
+      <section>
+        <h3>Features</h3>
+        <ul class="features">
+          <li>Lightweight and fast loading</li>
+          <li>Simple, clean, and distraction-free interface</li>
+          <li>Instant note creation with a single click</li>
+          <li>Responsive design that works on any device</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Keyboard shortcuts</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Shortcut</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><kbd>Ctrl</kbd> + <kbd>Enter</kbd></td>
+              <td>Submit the current note</td>
+            </tr>
+            <tr>
+              <td><kbd>Esc</kbd></td>
+              <td>Clear the note input field</td>
+            </tr>
+            <tr>
+              <td><kbd>Ctrl</kbd> + <kbd>N</kbd></td>
+              <td>Focus the new note input</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>Send feedback</h3>
+        <form>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+          <p>
+            <button type="submit">Submit Feedback</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+    </footer>
+  </body>
+</html>
