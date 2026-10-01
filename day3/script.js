@@ -65,23 +65,23 @@ function addNote(text, category) {
 
 // Tests: at least two console.log calls per function, expected output in comments
 
-console.log(searchNotes("milk"));       // [ { id: 1, text: "Buy milk and bread", category: "personal" } ]
-console.log(searchNotes("zzz"));        // []
+console.log(searchNotes("milk"));       
+console.log(searchNotes("zzz"));        
 
-console.log(longestNote());             // { id: 3, text: "Email the project report to Grace", category: "work" }
-console.log(longestNote.call(null));    // same result (edge case: function re-run)
+console.log(longestNote());             
+console.log(longestNote.call(null));    
 
-console.log(countByCategory());         // { personal: 2, work: 1, study: 2 }
-console.log(countByCategory());         // same (edge case: re-run)
+console.log(countByCategory());         
+console.log(countByCategory());         
 
-console.log(getSummary());              // "5 notes: 2 personal, 1 work, 2 study."
-console.log(getSummary());              // same (edge case: re-run)
+console.log(getSummary());              
+console.log(getSummary());              
 
-console.log(isDuplicate("Buy milk and bread")); // true
-console.log(isDuplicate("buy milk and bread")); // true (case-insensitive)
-console.log(isDuplicate("something new"));      // false (edge case)
+console.log(isDuplicate("Buy milk and bread"));
+console.log(isDuplicate("buy milk and bread")); 
+console.log(isDuplicate("something new"));      
 
-console.log(addNote("New note", "study"));      // true
-console.log(addNote("Buy milk and bread", "work")); // false (duplicate)
-console.log(addNote("", "work"));               // false (too short)
-console.log(addNote("Valid text", "other"));    // false (invalid category)
+console.log(addNote("New note", "study"));      
+console.log(addNote("Buy milk and bread", "work")); 
+console.log(addNote("", "work"));               
+console.log(addNote("Valid text", "other"));    
